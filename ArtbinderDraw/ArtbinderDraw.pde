@@ -24,15 +24,7 @@ void setup() {
 
 void draw() {
   background(255);
-
-  for (float i = 0; i < TWO_PI; i+= TWO_PI / 6) {
-    pushMatrix();
-    translate(width/2, height/2);
-    rotate(i);
-    image(canvas, 0, 0);
-    popMatrix();
-  }
-
+  image(canvas, 0, 0);
   if (isGuideOn) {
     image(guide, 0, 0);
   }
